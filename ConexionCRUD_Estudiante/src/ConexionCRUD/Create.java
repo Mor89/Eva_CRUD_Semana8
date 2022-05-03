@@ -23,7 +23,7 @@ public class Create {
         estudian.setEdadEstudiante(leer.nextLine());
           
           String tabla ="tb_estudiante";
-          String campostabla = "Carnet_estudiante,Nombre_estudiante,Apellido_estudiante,Edad_estudiante";
+          String campostabla = "carnet_estudiante,nom_estudiante,ape_estudiante,edad_estudiante";
           String valoresCampos = "'" + estudian.getCarnetEstudiante() + "','" + estudian.getNomEstudiante() + "','"
                   + estudian.getApeEstudiante ()+ "','" + estudian.getEdadEstudiante()+ "'";
           ConexionCRUD_Estudiante mostrar =new ConexionCRUD_Estudiante();

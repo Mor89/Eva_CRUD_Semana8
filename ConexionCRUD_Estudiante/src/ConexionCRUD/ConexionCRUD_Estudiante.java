@@ -16,7 +16,7 @@ public class ConexionCRUD_Estudiante {
 
     /* Ruta de la base de datos el servidor 127.0.0.1, el puerto 3306 y el nombre 
     de la base de datos bd_recurso_humano*/
-    private final String servidor = "jdbc:mysql://127.0.0.1:3306/bd_recurso_humano";
+    private final String servidor = "jdbc:mysql://127.0.0.1:3306/bd_estudiante";
     //Nombre del usuario (root por defecto) de la base de datos
     private final String usuario = "root";
     //Clave del usuario de la base de datos
@@ -30,6 +30,7 @@ public class ConexionCRUD_Estudiante {
         try {
             Class.forName(driverConector);
             conexion = DriverManager.getConnection(servidor, usuario, clave);
+           
         } catch (ClassNotFoundException | SQLException e) {
             System.out.println("Conexion fallida! Error! :" + e.getMessage());
 
@@ -40,6 +41,8 @@ public class ConexionCRUD_Estudiante {
     public Connection getConnection() {
         return conexion;
     }
+    
+    
 
     public void guardarRegistros(String tabla, String camposTabla, String valoresCampos) {
         ConexionCRUD_Estudiante conectar = new ConexionCRUD_Estudiante();

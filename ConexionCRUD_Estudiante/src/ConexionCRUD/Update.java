@@ -30,8 +30,8 @@ public class Update {
         estudian.setEdadEstudiante(leer.next());
         
         String tabla = "tb_estudiante";
-        String CValoresNuevos = "nom_estudiante = '" + estudian.getNomEstudiante() + "', ape_estudiante = '"
-                + estudian.getApeEstudiante() + "', edad_estudiante = '" + estudian.getEdadEstudiante();
+        String CValoresNuevos = "nom_estudiante  " + estudian.getNomEstudiante() + " ape_estudiante "
+                + estudian.getApeEstudiante() + " edad_estudiante " + estudian.getEdadEstudiante();
         
         mostrar.actualizarEliminarRegistro(tabla, CValoresNuevos, condicionBuscar);
         System.out.println("Modificado correctamente!");

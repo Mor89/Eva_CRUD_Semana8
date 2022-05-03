@@ -7,17 +7,17 @@ import java.util.Scanner;
 public class Delete {
     Delete() throws SQLException{
         Scanner leer  = new Scanner(System.in);
-        ConexionCRUD_Estudiante utilerias = new ConexionCRUD_Estudiante();
+        ConexionCRUD_Estudiante mostrar = new ConexionCRUD_Estudiante();
         System.out.println("<< ELIMINAR REGISTRO >>");
         
         System.out.println("Ingresar el id del registro: ");
-        String idContactoEliminar = leer.next();
+        String idEstudianteEliminar = leer.next();
         
         //Reingreso de datos para actualizar 
-        String tabla = "tb_contacto";
+        String tabla = "tb_estudiante";
         String campos = "*";
-        String condicion = "id_contacto " + idContactoEliminar;
-        utilerias.guardarRegistros(tabla, campos, campos);
+        String condicion = "id_estudiante " + idEstudianteEliminar;
+        mostrar.guardarRegistros(tabla, campos, campos);
         
         System.out.println("Presionar << Y >> para confirmar: ");
         String confirmarBorrar = leer.next();
@@ -29,7 +29,7 @@ public class Delete {
             */
             String valoresCamposNuevos = "";
             
-            utilerias.actualizarEliminarRegistro(tabla, valoresCamposNuevos, condicion);
+            mostrar.actualizarEliminarRegistro(tabla, valoresCamposNuevos, condicion);
             System.out.println("Registro borrado satisfactoriamente!");
         }
         MenuPrincipalEstudiante.MenuDesplegable();
