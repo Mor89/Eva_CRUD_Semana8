@@ -94,7 +94,38 @@ public class ConexionCRUD_Estudiante {
                   
             }
         }
-        
+        public void desplegarRegistros(String tablaBuscar, String campoBuscar, String condicionBuscar) throws SQLExeption{
+            ConexionCRUD_Estudiante conectar = new ConexionCRUD_Estudiante();
+            Connection cone = conectar.getConnection();
+            try{
+                Statement stmt;
+                String sqlQueryStmt;
+                if(condicionBuscar.equals("")){
+                    sqlQueryStmt = "SELECT " + campoBuscar + " FROM " + tablaBuscar + ";";
+                    
+               }else{
+                    sqlQueryStmt = " SELECT " + campoBuscar + " FROM " + tablaBuscar + " WHERE " + condicionBuscar;
+                    
+                }
+                
+                stmt = cone.createStatement();
+                stmt.executeQuery(sqlQueryStmt);
+                
+                try(ResultSet miResultSet = stmt.executeQuery(sqlQueryStmt)){
+                    
+                    if(miResultSet.next()){
+                        ResultSetMetaData metaData = miResultSet.getMetaData();
+                        int numColumnas = metaData.getColumnCount();
+                        System.out.println("<<REGISTROS ALMACENADOS>>");
+                        System.out.println();
+                     
+                                
+                              
+                    }
+                    
+                }
+            }
+        }
         
         
         
