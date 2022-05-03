@@ -58,7 +58,7 @@ public class ConexionCRUD_Estudiante {
             System.out.println(e.getMessage());
         }
     }
-
+ // Toda esta parte es mi aporte al proyecto MARLIN GABRIELA ROSALES GARCIA
     public void actualizarEliminarRegistro(String tabla, String valoresCamposNuevos, String condicion) {
 
         ConexionCRUD_Estudiante conectar = new ConexionCRUD_Estudiante();
@@ -82,7 +82,7 @@ public class ConexionCRUD_Estudiante {
 
         }
     }
-
+            
     public void desplegarRegistros(String tablaBuscar, String campoBuscar, String condicionBuscar) throws SQLException {
         ConexionCRUD_Estudiante conectar = new ConexionCRUD_Estudiante();
         Connection cone = conectar.getConnection();
@@ -136,7 +136,7 @@ public class ConexionCRUD_Estudiante {
         } catch (SQLException ex) {
 
             System.out.println("HA OCURRIDO EL SIGUIENTE ERROR: " + ex.getMessage());
-
+  //aporte al proyecto
         }
     }
 }
