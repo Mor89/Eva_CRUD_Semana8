@@ -33,7 +33,7 @@ public class Update {
         String CValoresNuevos = "nom_estudiante = '" + estudian.getNomEstudiante() + "', ape_estudiante = '"
                 + estudian.getApeEstudiante() + "', edad_estudiante = '" + estudian.getEdadEstudiante();
         
-        mostrar.ActualizarEliminarRegistro(tabla, CValoresNuevos, condicionBuscar);
+        mostrar.actualizarEliminarRegistro(tabla, CValoresNuevos, condicionBuscar);
         System.out.println("Modificado correctamente!");
         
            MenuPrincipalEstudiante.MenuDesplegable();
