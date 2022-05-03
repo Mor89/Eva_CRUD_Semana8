@@ -63,7 +63,7 @@ public class ConexionCRUD_Estudiante {
     }
     public static void main(String[] args) {
         // TODO code application logic here
-       
+       ConexionCRUD_Estudiante objeto = new ConexionCRUD_Estudiante();
     }
     
 }
