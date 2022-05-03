@@ -12,5 +12,21 @@ public class MenuPrincipalEstudiante {
     static void MenuDesplegable()throws SQLException{
     Scanner opcion = new Scanner (System.in);
     String MenuOp;
+    
+        System.out.println("------------------------------");
+        System.out.println("         OPCIONES:            ");
+        System.out.println("------------------------------");
+        System.out.println("     1. CREAR REGISTRO        ");
+        System.out.println("     2. CONSULTAR REGISTRO    ");
+        System.out.println("     3. ACTUALIZAR REGISTROS  ");
+        System.out.println("     4. ELIMINAR REGISTRO     ");
+        System.out.println("     5. SALIR                 ");
+        System.out.println("------------------------------");
+        System.out.println("     SELECCIONAR OPCION:      ");
+        System.out.println("----------------------------- ");
+        MenuOp = opcion.next();
     }
-}
+    
+    
+    }
+
