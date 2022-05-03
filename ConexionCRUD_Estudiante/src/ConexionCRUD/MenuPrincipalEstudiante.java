@@ -29,16 +29,16 @@ public class MenuPrincipalEstudiante {
         switch (MenuOp) {
 
             case "1":
-               // Create crear = new crear();
+                Create crear = new Create();
                 break;
             case "2":
-               // Read leer = new leer();
+               Read leer = new Read();
                 break;
             case "3":
-              //  Update actualizar = new actualizar();
+              Update actualizar = new Update();
                 break;
             case "4":
-              //  Delete eliminar = new eliminar();
+               Delete eliminar = new Delete();
                 break;
             case "5":
                 System.exit(0);
