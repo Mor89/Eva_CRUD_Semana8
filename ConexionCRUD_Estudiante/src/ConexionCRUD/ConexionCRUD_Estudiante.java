@@ -7,8 +7,6 @@ package ConexionCRUD;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -61,38 +59,5 @@ public class ConexionCRUD_Estudiante {
             System.out.println(e.getMessage());
         }
 
-    }
-  
-    
-    
-     public void ActualizarEliminarRegistro(String tabla, String valoresCamposNuevos, String condicion){
-            
-            ConexionCRUD_Estudiante conectar = new ConexionCRUD_Estudiante();
-            Connection cone = conectar.getConnection();
-            try{
-                Statement stmt;
-                String sqlQueryStmt;
-                
-                if(valoresCamposNuevos.isEmpty()){
-                    sqlQueryStmt = "DELETE FROM " + tabla + " WHERE " + condicion + ";";
-                    }else{
-                    sqlQueryStmt = " UPDATE " + tabla + " SET " + valoresCamposNuevos + " WHERE " + condicion + ";";
-                    
-                    
-                }
-                stmt = cone.createStatement();
-                stmt.executeUpdate(sqlQueryStmt);
-                stmt.close();
-                cone.close();
-              }catch(SQLException ex){
-                  System.out.println("HA OCURRIDO EL SIGUIENTE ERROR: " + ex.getMessage());
-                  
-            }
-        }
-        
-        
-        
-        
-       
-    }
-
+    } 
+}
