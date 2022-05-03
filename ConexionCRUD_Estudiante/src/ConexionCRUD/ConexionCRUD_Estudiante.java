@@ -94,7 +94,7 @@ public class ConexionCRUD_Estudiante {
                   
             }
         }
-        public void desplegarRegistros(String tablaBuscar, String campoBuscar, String condicionBuscar) throws SQLExeption{
+        public void desplegarRegistros(String tablaBuscar, String campoBuscar, String condicionBuscar) throws SQLException{
             ConexionCRUD_Estudiante conectar = new ConexionCRUD_Estudiante();
             Connection cone = conectar.getConnection();
             try{
