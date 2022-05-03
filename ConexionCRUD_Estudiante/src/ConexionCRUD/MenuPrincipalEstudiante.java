@@ -1,18 +1,18 @@
-
 package ConexionCRUD;
 
 import java.sql.SQLException;
 import java.util.Scanner;
 
-
 public class MenuPrincipalEstudiante {
+
     public static void main(String[] args) throws SQLException {
         MenuDesplegable();
     }
-    static void MenuDesplegable()throws SQLException{
-    Scanner opcion = new Scanner (System.in);
-    String MenuOp;
-    
+
+    static void MenuDesplegable() throws SQLException {
+        Scanner opcion = new Scanner(System.in);
+        String MenuOp;
+
         System.out.println("------------------------------");
         System.out.println("         OPCIONES:            ");
         System.out.println("------------------------------");
@@ -25,8 +25,27 @@ public class MenuPrincipalEstudiante {
         System.out.println("     SELECCIONAR OPCION:      ");
         System.out.println("----------------------------- ");
         MenuOp = opcion.next();
-    }
-    
-    
-    }
 
+        switch (MenuOp) {
+
+            case "1":
+               // Create crear = new crear();
+                break;
+            case "2":
+               // Read leer = new leer();
+                break;
+            case "3":
+              //  Update actualizar = new actualizar();
+                break;
+            case "4":
+              //  Delete eliminar = new eliminar();
+                break;
+            case "5":
+                System.exit(0);
+                break;
+            default:
+                System.out.println(" Seleccion invalida! ");
+                break;
+        }
+    }
+}
