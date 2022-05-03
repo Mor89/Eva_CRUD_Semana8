@@ -31,7 +31,6 @@ public class ConexionCRUD_Estudiante {
         try {
             Class.forName(driverConector);
             conexion = DriverManager.getConnection(servidor, usuario, clave);
-            System.out.println("Conexion Exitosa!");
         } catch (ClassNotFoundException | SQLException e) {
             System.out.println("Conexion fallida! Error! :" + e.getMessage());
 
@@ -61,10 +60,6 @@ public class ConexionCRUD_Estudiante {
         }
 
     }
-    public static void main(String[] args) {
-        // TODO code application logic here
-        //Prueva exitosa
-       ConexionCRUD_Estudiante objeto = new ConexionCRUD_Estudiante();
-    }
+  
     
 }
