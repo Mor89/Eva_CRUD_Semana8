@@ -16,18 +16,18 @@ public class Update {
         estudian.setId_estudiante(leer.nextInt());
         
         String tablaBuscar = "tb_estudiante";
-        String campoBuscar = "id_estudiante, carnet_estudiante, nom_estudiante, ape_estudiante, edad_estudiante";
+        String campoBuscar = "id_estudiante; carnet_estudiante; nom_estudiante; ape_estudiante; edad_estudiante";
         String condicionBuscar = "id_estudiante = " + estudian.getId_estudiante();
         mostrar.desplegarRegistros(tablaBuscar, campoBuscar, condicionBuscar);
         
         System.out.println("Nombre: ");
-        estudian.setNom_estudiante(leer.nextLine());
+        estudian.setNom_estudiante(leer.next());
         
         System.out.println("Apellido: ");
-        estudian.setApe_estudiante(leer.nextLine());
+        estudian.setApe_estudiante(leer.next());
         
         System.out.println("Edad: ");
-        estudian.setEdad_estudiante(Integer.parseInt(leer.nextLine()));
+        estudian.setEdad_estudiante(Integer.parseInt(leer.next()));
         
         String tabla = "tb_estudiante";
         String CValoresNuevos = "nom_estudiante = '" + estudian.getNom_estudiante() + "', ape_estudiante = '"

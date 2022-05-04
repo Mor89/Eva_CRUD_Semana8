@@ -16,7 +16,7 @@ public class Delete {
         //Reingreso de datos para actualizar 
         String tabla = "tb_estudiante";
         String campos = "*";
-        String condicion = "id_estudiante " + id_estudianteEliminar;
+        String condicion = "id_estudiante =  " + id_estudianteEliminar;
         mostrar.guardarRegistros(tabla, campos, campos);
         
         System.out.println("Presionar << Y >> para confirmar: ");
