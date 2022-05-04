@@ -56,7 +56,7 @@ public class ConexionCRUD_Estudiante {
 
             stmt.close();
             cone.close();
-            System.out.println("Registro giardado correctamente!");
+            System.out.println("Registro guardado correctamente!");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }

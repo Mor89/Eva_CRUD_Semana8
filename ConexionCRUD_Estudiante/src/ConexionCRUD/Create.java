@@ -11,22 +11,22 @@ public class Create {
         System.out.println("<<CREAR REGISTRO>>");
         
         System.out.println("Carnet");
-        estudian.setCarnetEstudiante(leer.nextLine());
+        estudian.setCarnet_estudiante(leer.nextLine());
         
         System.out.println("Nombre");
-        estudian.setNomEstudiante(leer.nextLine());
+        estudian.setNom_estudiante(leer.nextLine());
         
         System.out.println("Apellido");
-        estudian.setApeEstudiante(leer.nextLine());
+        estudian.setApe_estudiante(leer.nextLine());
          
         System.out.println("Edad");
-        estudian.setEdadEstudiante(leer.nextLine());
+        estudian.setEdad_estudiante(Integer.parseInt(leer.nextLine()));
           
           String tabla ="tb_estudiante";
-          String campostabla = "carnet_estudiante,nom_estudiante,ape_estudiante,edad_estudiante";
-          String valoresCampos = "'" + estudian.getCarnetEstudiante() + "','" + estudian.getNomEstudiante() + "','"
-                  + estudian.getApeEstudiante ()+ "','" + estudian.getEdadEstudiante()+ "'";
-          ConexionCRUD_Estudiante mostrar =new ConexionCRUD_Estudiante();
+          String campostabla = "carnet_estudiante, nom_estudiante, ape_estudiante, edad_estudiante";
+          String valoresCampos = "'" + estudian.getCarnet_estudiante() + "','" + estudian.getNom_estudiante() + "','"
+                  + estudian.getApe_estudiante ()+ "','" + estudian.getEdad_estudiante()+ "'";
+          ConexionCRUD_Estudiante mostrar = new ConexionCRUD_Estudiante();
           mostrar.guardarRegistros(tabla,campostabla, valoresCampos);
           
           MenuPrincipalEstudiante.MenuDesplegable();

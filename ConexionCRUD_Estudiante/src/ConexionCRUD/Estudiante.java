@@ -2,53 +2,51 @@ package ConexionCRUD;
 
 
 public class Estudiante {
-    private int idEstudiante;
-    private String CarnetEstudiante;
-    private String NomEstudiante;
-    private String ApeEstudiante;
-    private String EdadEstudiante;
+    private int id_estudiante;
+    private String carnet_estudiante;
+    private String nom_estudiante;
+    private String ape_estudiante;
+    private int edad_estudiante;
 
-    public int getIdEstudiante() {
-        return idEstudiante;
+    public int getId_estudiante() {
+        return id_estudiante;
     }
 
-    public void setIdEstudiante(int idEstudiante) {
-        this.idEstudiante = idEstudiante;
+    public void setId_estudiante(int id_estudiante) {
+        this.id_estudiante = id_estudiante;
     }
 
-    public String getCarnetEstudiante() {
-        return CarnetEstudiante;
+    public String getCarnet_estudiante() {
+        return carnet_estudiante;
     }
 
-    public void setCarnetEstudiante(String CarnetEstudiante) {
-        this.CarnetEstudiante = CarnetEstudiante;
+    public void setCarnet_estudiante(String carnet_estudiante) {
+        this.carnet_estudiante = carnet_estudiante;
     }
 
-    public String getNomEstudiante() {
-        return NomEstudiante;
+    public String getNom_estudiante() {
+        return nom_estudiante;
     }
 
-    public void setNomEstudiante(String NomEstudiante) {
-        this.NomEstudiante = NomEstudiante;
+    public void setNom_estudiante(String nom_estudiante) {
+        this.nom_estudiante = nom_estudiante;
     }
 
-    public String getApeEstudiante() {
-        return ApeEstudiante;
+    public String getApe_estudiante() {
+        return ape_estudiante;
     }
 
-    public void setApeEstudiante(String ApeEstudiante) {
-        this.ApeEstudiante = ApeEstudiante;
+    public void setApe_estudiante(String ape_estudiante) {
+        this.ape_estudiante = ape_estudiante;
     }
 
-    public String getEdadEstudiante() {
-        return EdadEstudiante;
+    public int getEdad_estudiante() {
+        return edad_estudiante;
     }
 
-    public void setEdadEstudiante(String EdadEstudiante) {
-        this.EdadEstudiante = EdadEstudiante;
+    public void setEdad_estudiante(int edad_estudiante) {
+        this.edad_estudiante = edad_estudiante;
     }
-    
-    
-            
+
     
 }

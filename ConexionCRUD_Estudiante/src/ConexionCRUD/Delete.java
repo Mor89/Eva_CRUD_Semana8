@@ -11,12 +11,12 @@ public class Delete {
         System.out.println("<< ELIMINAR REGISTRO >>");
         
         System.out.println("Ingresar el id del registro: ");
-        String idEstudianteEliminar = leer.next();
+        String id_estudianteEliminar = leer.next();
         
         //Reingreso de datos para actualizar 
         String tabla = "tb_estudiante";
         String campos = "*";
-        String condicion = "id_estudiante " + idEstudianteEliminar;
+        String condicion = "id_estudiante " + id_estudianteEliminar;
         mostrar.guardarRegistros(tabla, campos, campos);
         
         System.out.println("Presionar << Y >> para confirmar: ");
