@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Create {
     Create() throws SQLException{
-        Scanner leer =new Scanner(System.in);
+        Scanner leer = new Scanner(System.in);
         Estudiante estudian = new Estudiante();
         System.out.println("<<CREAR REGISTRO>>");
         
@@ -14,13 +14,13 @@ public class Create {
         estudian.setCarnet_estudiante(leer.nextInt());
         
         System.out.println("Nombre");
-        estudian.setNom_estudiante(leer.nextLine());
+        estudian.setNom_estudiante(leer.next());
         
         System.out.println("Apellido");
-        estudian.setApe_estudiante(leer.nextLine());
+        estudian.setApe_estudiante(leer.next());
          
         System.out.println("Edad");
-        estudian.setEdad_estudiante(Integer.parseInt(leer.nextLine()));
+        estudian.setEdad_estudiante(Integer.parseInt(leer.next()));
           
           String tabla ="tb_estudiante";
           String campostabla = "carnet_estudiante, nom_estudiante, ape_estudiante, edad_estudiante";
