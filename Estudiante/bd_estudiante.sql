@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-05-2022 a las 04:55:17
+-- Tiempo de generación: 05-05-2022 a las 22:24:26
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 7.4.29
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `bd_estudiante`
 --
+CREATE DATABASE IF NOT EXISTS `bd_estudiante` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `bd_estudiante`;
 
 -- --------------------------------------------------------
 
@@ -27,7 +29,6 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `tb_estudiante`
 --
 
-DROP TABLE IF EXISTS `tb_estudiante`;
 CREATE TABLE `tb_estudiante` (
   `id_estudiante` int(11) NOT NULL,
   `carnet_estudiante` int(6) NOT NULL,
@@ -61,7 +62,7 @@ ALTER TABLE `tb_estudiante`
 -- AUTO_INCREMENT de la tabla `tb_estudiante`
 --
 ALTER TABLE `tb_estudiante`
-  MODIFY `id_estudiante` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_estudiante` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1001;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
