@@ -11,7 +11,7 @@ public class Create {
         System.out.println("<<CREAR REGISTRO>>");
         
         System.out.println("Carnet");
-        estudian.setCarnet_estudiante(leer.nextLine());
+        estudian.setCarnet_estudiante(leer.nextInt());
         
         System.out.println("Nombre");
         estudian.setNom_estudiante(leer.nextLine());
